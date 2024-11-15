@@ -14,7 +14,7 @@ const Header = () => {
             <span className="flex items-center">
               <SunSnow className="w-7 h-7" />
             </span>
-            <span className="custom-font font-medium text-xl">Sun & Storm</span>
+            <span className="custom-font font-medium text-xl">Forecastly</span>
           </p>
         </Link>
         {/* search */}
