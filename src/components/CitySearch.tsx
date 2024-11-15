@@ -15,6 +15,7 @@ import { useNavigate } from "react-router-dom";
 import { useSearchHistory } from "@/hooks/use-search-history";
 import { format } from "date-fns";
 import { useFavorite } from "@/hooks/use-favorite";
+import { DialogTitle } from "@radix-ui/react-dialog";
 
 const CitySearch = () => {
   const [open, setOpen] = useState(false);
@@ -49,6 +50,7 @@ const CitySearch = () => {
         <Search className="mr-2 h-4 w-4" /> Search Cities...
       </Button>
       <CommandDialog open={open} onOpenChange={setOpen}>
+        <DialogTitle>Search Cities</DialogTitle>
         <CommandInput
           placeholder="Search cities..."
           value={query}
